@@ -1,1 +1,23 @@
 
+// Millis Thiago Carvalho's code:
+
+#define LED 14
+long timer;
+
+void TurnOn_hardware() {
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, LOW);
+}
+
+
+
+void setup() {
+  TurnOn_hardware();
+  timer = millis();
+}
+
+void loop() {
+  if (millis() - timer >= 1000) {
+    digitalWrite(LED, !digitalRead(LED));
+  }
+}
