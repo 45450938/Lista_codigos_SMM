@@ -1,5 +1,5 @@
 
-// Millis Thiago Carvalho's code:
+//Thiago Carvalho's millis code:
 
 #define LED 14
 long timer;
